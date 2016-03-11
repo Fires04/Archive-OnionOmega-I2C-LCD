@@ -10,13 +10,13 @@ setup (
 
        # Fill in these to make your Egg ready for upload to
        # PyPI
-       author='David',
-       author_email='',
+       author='David "Fires" Stein',
+       author_email='info@davidstein.cz',
 
        #summary = 'Just another Python package for the cheese shop',
        url='',
        license='',
-       long_description='Long description of the package',
+       long_description='',
 
        # could also include long_description, download_url, classifiers, etc.
 

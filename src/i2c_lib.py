@@ -1,4 +1,3 @@
-import smbus
 from time import *
 from OmegaExpansion import onionI2C
 
@@ -9,7 +8,7 @@ class i2c_device:
 
 # Write a single command
    def write_cmd(self, cmd):
-      self.i2c.write(self.addr, cmd)
+      self.i2c.write(self.addr, [cmd])
       sleep(0.0001)
 
 # Write a command and argument
@@ -19,7 +18,7 @@ class i2c_device:
 
 # Write a block of data
    def write_block_data(self, cmd, data):
-      self.i2c.writeBytes(self.addr, cmd, data)
+      self.i2c.writeBytes(self.addr, cmd, [data])
       sleep(0.0001)
 
 # Read a single byte

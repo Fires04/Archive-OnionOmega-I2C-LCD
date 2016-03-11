@@ -1,7 +1,7 @@
 import lcddriver
 from time import *
 
-lcd = lcddriver.lcd()
+lcd = lcddriver.lcd(0x27)
 
 while True:
         lcd.backlightOn()

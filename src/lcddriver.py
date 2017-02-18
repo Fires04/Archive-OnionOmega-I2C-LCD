@@ -120,7 +120,7 @@ class lcd:
             self.line2 = string;
             self.lcd_write(0xC0)
         if line == 3:
-            self.line1 = string;
+            self.line3 = string;
             self.lcd_write(0x94)
         if line == 4:
             self.line4 = string;
